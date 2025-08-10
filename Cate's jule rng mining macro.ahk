@@ -1,4 +1,4 @@
-﻿#SingleInstance, Force
+#SingleInstance, Force
 #Persistent
 #Include, %A_ScriptDir%\lib\rescalc.ahk
 
@@ -193,7 +193,7 @@ MiningForward()
 	Global NewFX
 	Send, {w down}
 	Click, %NewFX% %NewFY% Left Down
-	Sleep, 17000
+	Sleep, 10000
 	Send, {w Up}
 	Return
 	}
@@ -208,8 +208,11 @@ MiningRight()
 	Send, {d up}
 	Send, {d down}
 	Click, %NewRX% %NewRY% Left Down
-	Sleep, 1500
+	Sleep, 800
+	Click, %NewRX% %NewRY% Left Up
+	Sleep, 1000
 	Send, {d up}
+	Click, %NewRX% %NewRY% Left Down
 	Send, {w down}
 	Sleep, 50
 	Send, {w up}
@@ -222,7 +225,7 @@ MiningBackward()
 	Global NewBX
 	Send, {s down}
 	Click, %NewBX% %NewBY% 0
-	Sleep, 17000
+	Sleep, 10000
 	Send, {s up}
 	Return
 	}
