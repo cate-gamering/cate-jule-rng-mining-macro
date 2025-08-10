@@ -2,8 +2,10 @@
 this macro is made for the mining minigame in jule rng in order to farm gems and potions
 
 # Requirement
+- a 16:9 screen
 - alteast 30+ fps while in-game
 - roblox on full screen
+- (OPTIONAL) discord webhook
 
 # How to use? 
 
